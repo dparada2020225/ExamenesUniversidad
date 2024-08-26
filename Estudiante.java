@@ -12,19 +12,23 @@ public class Estudiante {
         this.cumple = cumple;
         this.correo = correo;
     }
-    
+
     public String getApellido() {
         return apellido;
     }
+
     public String getCorreo() {
         return correo;
     }
+
     public String getCumple() {
         return cumple;
     }
+
     public int getID() {
         return ID;
     }
+
     public String getNombre() {
         return nombre;
     }
@@ -32,24 +36,21 @@ public class Estudiante {
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
+
     public void setCorreo(String correo) {
         this.correo = correo;
     }
+
     public void setCumple(String cumple) {
         this.cumple = cumple;
     }
+
     public void setID(int iD) {
         ID = iD;
     }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-
-
-    
-
-
-
-    
 }
