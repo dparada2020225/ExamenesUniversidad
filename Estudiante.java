@@ -1,16 +1,21 @@
+import java.util.ArrayList;
+
+
 public class Estudiante {
     private String nombre;
     private String apellido;
     private int ID;
     private String cumple;
     private String correo;
+    private ArrayList<NotaEx> grades;
 
-    public Estudiante(String nombre, String apellido, int iD, String cumple, String correo) {
+    public Estudiante(String nombre, String apellido, int iD, String cumple, String correo, ArrayList<NotaEx> grades ) {
         this.nombre = nombre;
         this.apellido = apellido;
         ID = iD;
         this.cumple = cumple;
         this.correo = correo;
+        this.grades = grades;
     }
 
     public String getApellido() {
@@ -31,6 +36,14 @@ public class Estudiante {
 
     public String getNombre() {
         return nombre;
+    }
+
+    public ArrayList<NotaEx> getGrades(){
+        return grades;
+    }
+
+    public void agregarNota(NotaEx nota){
+        this.grades.add(nota);
     }
 
     public void setApellido(String apellido) {
